@@ -1,9 +1,8 @@
 package interview;
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class duplicateCharFromStrJava8 {
+public class duplicateCharCountFromStrJava8 {
     public static void main(String args[]) {
         String str = "programming";
         Map<Character, Long> charCount = str.chars()

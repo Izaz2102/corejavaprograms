@@ -1,5 +1,7 @@
 package only.java;
 
+import java.util.Arrays;
+
 public class SecondLargest {
     public static void main(String[] args) {
         int[] numbers = {10, 35, 12, 85, 35, 85};

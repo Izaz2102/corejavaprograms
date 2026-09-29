@@ -18,7 +18,7 @@ public class EarliestRepeatingCharJava8 {
                 ))
                 .entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() > 1)
+                .filter(entry -> entry.getValue() > 1) //here if we use == 1 then it becomes "first non repeating character program" and output is 'f'
                 .map(Map.Entry::getKey)
                 .findFirst()
                 .orElse(null);
