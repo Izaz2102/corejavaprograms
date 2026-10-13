@@ -4,11 +4,10 @@ import java.util.LinkedHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.*;
-import java.util.function.Function;
 
 public class EarliestRepeatingCharJava8 {
     public static void main(String[] args) {
-        String str = "geeksforgeeks";
+        String str = "javastreams";//a
         char index = str.chars()
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(
@@ -18,7 +17,7 @@ public class EarliestRepeatingCharJava8 {
                 ))
                 .entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() > 1) //here if we use == 1 then it becomes "first non repeating character program" and output is 'f'
+                .filter(entry -> entry.getValue() > 1) //here if we use == 1 then it becomes "first non-repeating character program" and output is 'f'
                 .map(Map.Entry::getKey)
                 .findFirst()
                 .orElse(null);
